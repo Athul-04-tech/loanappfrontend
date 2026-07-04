@@ -2,5 +2,8 @@
   "installCommand": "npm install",
   "buildCommand": "npm run export:web",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "http://16.170.238.199/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

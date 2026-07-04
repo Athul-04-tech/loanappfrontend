@@ -1,7 +1,8 @@
 import axios from "axios";
+import { Platform } from "react-native";
 import { getToken } from "../utils/secureStorage";
 
-const apiUrl = process.env.EXPO_PUBLIC_API_URL || "http://16.170.238.199";
+const apiUrl = Platform.OS === "web" ? "" : process.env.EXPO_PUBLIC_API_URL || "http://16.170.238.199";
 let onUnauthorized: (() => void) | null = null;
 
 const api = axios.create({
