@@ -9,6 +9,7 @@ export default {
     },
     android: {
       package: "com.athul.loanapp",
+      usesCleartextTraffic: true,
     },
     extra: {
       apiUrl: process.env.EXPO_PUBLIC_API_URL || process.env.API_URL || "http://16.170.238.199",
