@@ -3,6 +3,10 @@ export default {
     name: "Payment Collection App",
     slug: "payment-collection-app",
     version: "1.0.0",
+    splash: {
+      backgroundColor: "#ffffff",
+      resizeMode: "contain",
+    },
     android: {
       package: "com.athul.loanapp",
     },
